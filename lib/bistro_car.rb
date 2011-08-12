@@ -8,7 +8,6 @@ module BistroCar
 
   if defined?(Rails::Engine)
     class Engine < Rails::Engine
-      engine_name :bistro_car
     end
   end
   

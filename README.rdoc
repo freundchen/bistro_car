@@ -2,6 +2,9 @@
 
 * http://github.com/jnicklas/bistro_car
 
+== Fork Info
+This fork was created to silence the annoying "railtie_name is deprecated" warning. No other changes are introduced.
+
 == Description:
 
 BistroCar serves up {CoffeeScript}[http://jashkenas.github.com/coffee-script/]
