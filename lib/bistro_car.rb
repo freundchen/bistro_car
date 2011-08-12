@@ -4,13 +4,13 @@ require 'bistro_car/bundle'
 require 'bistro_car/helpers'
 
 module BistroCar
-  VERSION = "0.2.2"
+  VERSION = "0.2.3"
 
   if defined?(Rails::Engine)
     class Engine < Rails::Engine
     end
   end
-  
+
   class << self
     def compile(source)
       file = Tempfile.new('script.coffee')
@@ -18,7 +18,7 @@ module BistroCar
       file.close
       %x(coffee -p #{file.path})
     end
-  
+
     attr_accessor :mode, :minify
   end
 end
